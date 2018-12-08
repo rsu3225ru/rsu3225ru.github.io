@@ -1,0 +1,102 @@
+body {
+	background: hsl(0, 0%, 10%);
+}
+
+table {
+	margin: auto;
+	background: white;
+	font-size: 13px;
+	border-collapse: collapse;
+
+	th, td {
+		padding: 6px 8px;
+		border: 1px solid #333;
+		min-width: 20px;
+	}
+	th {
+		background: #eee;
+	}
+}
+
+.time {
+	border-left: 8px solid;
+	color: #888;
+	font-size: 0.75em;
+	padding: 0 3px;
+}
+.artist {
+	text-align: center;
+	font-weight: bold;
+}
+.file {
+	text-align: center;
+}
+
+.song_index {
+	border-left: 8px solid;
+	text-align: right;
+	background: #eee;
+	color: #888;
+}
+.song {
+	.song_mod {
+		color: hsl(210, 80, 50);
+		font-size: 0.85em;
+	}
+}
+
+
+.lyric, .youtube {
+	width: 75px;
+	text-align: center;
+	position: relative;
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		color: hsl(0, 0%, 100%);
+		text-decoration: none;
+		font-weight: bold;
+	}
+}
+
+
+.lyric a {
+	background: #99f;
+	
+	&:hover {
+		background: #77f;
+	}
+	&:focus {
+		background: #55f;
+	}
+}
+
+.youtube a {
+	background: #f99;
+	
+	&:hover {
+		background: #f77;
+	}
+	&:focus {
+		background: #f55;
+	}
+}
+
+
+.fileheader {
+	background: #eee;
+	font-size: 1.2em;
+}
+.fileheader.fileheader_desc {
+	font-size: 0.85em;
+	color: #555;
+	td {
+		border-left: 8px solid;
+	}
+}
