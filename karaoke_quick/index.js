@@ -150,4 +150,4 @@ rows = data.map(file=>{
 table = `<table>${[
 ].join('')}${rows}</table>`;
 
-document.body.innerHTML = table;
+document.querySelector('.main').innerHTML = table;
